@@ -19,7 +19,8 @@ const Technologies = ({ techPromise }: TechProps) => {
             <div className="grid grid-cols-12 gap-4 mx-20">
                 <div className=" col-span-10">
                     <AvailableTechs technologies={technologies}></AvailableTechs>
-                </div>                <div className="card bg-base-100 w-96 h-50 shadow-sm">
+                </div>
+                <div className="card bg-base-100 w-96 h-50 shadow-sm">
                     {/* your stack part starts */}
                     <div className="card-body">
                         <h2 className="card-title">Card title!</h2>
@@ -28,6 +29,7 @@ const Technologies = ({ techPromise }: TechProps) => {
                             <button className="btn btn-primary">Buy Now</button>
                         </div>
                     </div>
+                    
                 </div>
 
             </div>
