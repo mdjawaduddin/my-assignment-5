@@ -28,6 +28,7 @@ const techPromise = techFetch();
        <Suspense fallback={<h2>Loading...</h2>}>
         <Technologies techPromise={techPromise} />
       </Suspense>
+      <div className="divider mt-28"></div>
       <Footer></Footer>
       
       
