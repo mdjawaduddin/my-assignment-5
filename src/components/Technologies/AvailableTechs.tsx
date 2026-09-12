@@ -21,7 +21,7 @@ const AvailableTechs = ({ technologies }) => {
                         <p>{technology.description}</p>
                         <div className="divider"></div>
                         <div className="card-actions justify-between">
-                            <div className="badge badge-outline">{technology.category}</div>
+                            <div className="badge badge-outline bg-[#F1F5F9]">{technology.category}</div>
                             <div >{technology.difficulty}</div>
                             <div className="flex justify-around items-center"> <GoStarFill color="yellow" />
                                 {technology.rating}</div>

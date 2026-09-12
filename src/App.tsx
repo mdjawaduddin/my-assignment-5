@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Technologies from "./components/Technologies/Technologies";
 import { Suspense } from "react";
 import type { Itech } from "./types/Itech";
+import Footer from "./components/Footer";
 
 
 
@@ -27,6 +28,7 @@ const techPromise = techFetch();
        <Suspense fallback={<h2>Loading...</h2>}>
         <Technologies techPromise={techPromise} />
       </Suspense>
+      <Footer></Footer>
       
       
     </>
