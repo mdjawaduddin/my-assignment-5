@@ -2,8 +2,8 @@ import BannerLogo from "../assets/banner-stack.png"
 
 const Banner = () => {
     return (
-        <div  >
-            <span className="flex justify-around items-center  container mx-auto mt-24">
+        <div className="flex justify-around items-center  container mx-auto mt-24" >
+        
              <div className="pl-4">
                 <p className="text-[60px] font-extrabold leading-none ">Build Your Ideal <br />
                 <span className="text-[60px] font-extrabold  bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Development Stack</span> </p>
@@ -22,11 +22,8 @@ const Banner = () => {
             </div>
             <div>
                 <img src={BannerLogo} alt="" />
-            </div>    </span>
-                <div className="mt-28 container mx-auto pl-28">
-            <p className="text-[36px] font-extrabold"> Explore the <span className="text-[36px] font-extrabold  bg-linear-to-r from-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Technologies</span> </p>
-            <p className=" text-[18px] text-[#475569]">Pick one technology per category to build your ideal stack.</p>
-        </div>
+            </div>  
+                
             
 
               </div>

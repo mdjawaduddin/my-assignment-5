@@ -1,0 +1,25 @@
+
+import React, { use } from 'react';
+import type { Itech } from '../../types/Itech';
+import AvailableTechs from './AvailableTechs';
+
+interface TechProps{
+    techPromise: Promise<Itech[]>
+}
+const Technologies = ({techPromise}:TechProps) => {
+    const technologies = use(techPromise);
+    console.log(technologies)
+    return (
+        <div>
+<div className="mt-28 container mx-auto pl-28">
+            <p className="text-[36px] font-extrabold"> Explore the <span className="text-[36px] font-extrabold  bg-linear-to-r from-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Technologies</span> </p>
+            <p className=" text-[18px] text-[#475569]">Pick one technology per category to build your ideal stack.</p>
+        </div>
+      
+        
+            <AvailableTechs technologies= {technologies}></AvailableTechs>
+        </div>
+    );
+};
+
+export default Technologies;
