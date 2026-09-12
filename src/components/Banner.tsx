@@ -3,13 +3,13 @@ import BannerLogo from "../assets/banner-stack.png"
 const Banner = () => {
     return (
         <div className="flex justify-around items-center  container mx-auto mt-24" >
-        
-             <div className="pl-4">
+
+            <div className="pl-4">
                 <p className="text-[60px] font-extrabold leading-none ">Build Your Ideal <br />
-                <span className="text-[60px] font-extrabold  bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Development Stack</span> </p>
+                    <span className="text-[60px] font-extrabold  bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Development Stack</span> </p>
                 <p className=" text-[#475569] text-[18px] pt-6  ">
                     Explore frontend, backend, database, and tooling options,<br />
-                    compare them side by side, and put together the stack that fits your <br/>
+                    compare them side by side, and put together the stack that fits your <br />
                     next project.
                 </p>
 
@@ -22,15 +22,15 @@ const Banner = () => {
             </div>
             <div>
                 <img src={BannerLogo} alt="" />
-            </div>  
-                
-            
+            </div>
 
-              </div>
-              
-          
 
-      
+
+        </div>
+
+
+
+
 
     );
 };
