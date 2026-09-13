@@ -20,7 +20,7 @@ const Technologies = ({ techPromise }: TechProps) => {
                 <p className="text-[36px] font-extrabold">
                     Explore the{" "}
 
-                    <span className="text-[36px] font-extrabold bg-linear-to-r from-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text">
+                    <span className="text-[36px] font-extrabold brand-gradient text-transparent bg-clip-text">
                         Technologies
                     </span>
                 </p>

@@ -6,7 +6,7 @@ const Banner = () => {
 
             <div className="pl-6.5">
                 <p className="text-[60px] font-extrabold leading-none ">Build Your Ideal <br />
-                    <span className="text-[60px] font-extrabold  bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Development Stack</span> </p>
+                    <span className="text-[60px] font-extrabold brand-gradient text-transparent bg-clip-text"> Development Stack</span> </p>
                 <p className=" text-[#475569] text-[18px] pt-6  ">
                     Explore frontend, backend, database, and tooling options,<br />
                     compare them side by side, and put together the stack that fits your <br />
@@ -14,7 +14,7 @@ const Banner = () => {
                 </p>
 
                 <div className="pt-10 text-[16px] space-x-2">
-                    <button className="btn btn-ghost text-white font-semibold rounded-lg py-3 px-4 bg-linear-to-r from-[#F97316] to-[#EC4899]">Explore Technologies</button>
+                    <button className="btn btn-ghost text-white font-semibold rounded-lg py-3 px-4 brand-gradient">Explore Technologies</button>
                     <button className="btn btn-ghost border-2 border-[#E5E7EB] rounded-lg py-3 px-4">Learn More</button>
                 </div>
 

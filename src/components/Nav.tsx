@@ -17,7 +17,7 @@ const Nav = () => {
             </div>
             <div className=" flex justify-between gap-5">
                 <button className=" btn btn-ghost  text-[#334155] text-sm font-medium" >Sign In</button>
-                <button className="bg-[#D91B7E] btn btn-ghost px-5 py-2.5 text-white text-sm font-semibold  rounded-[50px]">Sign Up</button>
+                <button className="brand-gradient btn btn-ghost px-5 py-2.5 text-white text-sm font-semibold  rounded-[50px]">Sign Up</button>
             </div>
      
 

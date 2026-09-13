@@ -107,7 +107,7 @@ const Sidebar = ({
 
                             <button
                                 onClick={handleRemoveAll}
-                                className="btn btn-outline w-full mt-4 rounded-lg"
+                                className="btn btn-outline w-full mt-4 rounded-lg text-[#D82C20] border-[#ED8C85] rounded-2"
                             >
                                 Remove All
                             </button>
