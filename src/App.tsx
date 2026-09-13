@@ -25,7 +25,7 @@ const techPromise = techFetch();
       <Nav ></Nav>
       <div className="divider"></div>
       <Banner></Banner>
-       <Suspense fallback={<h2>Loading...</h2>}>
+       <Suspense fallback={<h2 className="text-black-800 flex justify-center items-center">Loading...</h2>}>
         <Technologies techPromise={techPromise} />
       </Suspense>
       <div className="divider mt-28"></div>
