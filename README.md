@@ -4,13 +4,13 @@ Dev Stack
 Description:
 A simple web app where users can explore technologies and build their own development stack.
 
-Technologies Used:
-React.js
-TypeScript
-Tailwind CSS
-DaisyUI
-React-Toastify
-JSON
+Technologies Used by me:
+React.js, 
+TypeScript,
+Tailwind CSS,
+DaisyUI,
+React-Toastify,
+JSON and 
 Vite
 
 Features:
