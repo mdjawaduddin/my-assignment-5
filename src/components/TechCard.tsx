@@ -15,7 +15,7 @@ const TechCard = ({
 }: TechCardProps) => {
 
     return (
-        <div className="w-full">
+        <div>
 
             <div className="card bg-base-100 w-full shadow-sm rounded-2xl p-5">
 

@@ -1,4 +1,5 @@
 
+import { RxCross2 } from 'react-icons/rx';
 import type { Itech } from '../types/Itech';
 
 interface SidebarProps {
@@ -20,7 +21,7 @@ const Sidebar = ({
 
                 <div className="card-body p-4">
 
-                  
+
                     <div>
 
                         <h2 className="card-title font-bold">
@@ -34,33 +35,33 @@ const Sidebar = ({
                     </div>
 
 
-                  
+
                     {stack.length === 0 ? (
 
-                        <>
 
-                            <div className="border border-dotted rounded-md border-[#E2E8F0] mt-4">
 
-                                <p className="text-[#94A3B8] flex justify-center items-center h-16">
-                                    Your stack is empty.
-                                </p>
+                        <div className="border border-dotted rounded-md border-[#E2E8F0] mt-4">
 
-                            </div>
+                            <p className="text-[#94A3B8] flex justify-center items-center h-16">
+                                Your stack is empty.
+                            </p>
 
-                        </>
+                        </div>
+
+
 
                     ) : (
 
                         <>
 
-                          
+
                             <div className="mt-4 space-y-3">
 
                                 {stack.map((technology) => (
 
-                                    <div
-                                        key={technology.id}
+                                    <div key={technology.id}
                                         className="border border-[#E2E8F0] rounded-lg p-3 flex items-center justify-between"
+                                        
                                     >
 
                                         <div className="flex items-center gap-3">
@@ -86,14 +87,14 @@ const Sidebar = ({
                                         </div>
 
 
-                                        {/* Remove one */}
+
                                         <button
                                             onClick={() =>
                                                 handleRemoveFromStack(technology.id)
                                             }
                                             className="text-[#94A3B8] text-lg font-bold"
                                         >
-                                            ✕
+                                            <RxCross2 />
                                         </button>
 
                                     </div>
@@ -103,7 +104,7 @@ const Sidebar = ({
                             </div>
 
 
-                        
+
                             <button
                                 onClick={handleRemoveAll}
                                 className="btn btn-outline w-full mt-4 rounded-lg"

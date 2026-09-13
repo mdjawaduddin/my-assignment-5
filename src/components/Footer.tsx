@@ -3,7 +3,7 @@ import Logo from "../assets/logo-text.png"
 
 const Footer = () => {
     return (
-        <div className="container mx-auto mt-16 pl-20 pr-5" >
+        <div className="container mx-auto mt-16 pl-35 pr-5" >
             <div className=" grid grid-cols-5 items-start gap-4">
                 <div className=" col-span-2">
                     <img src={Logo} alt="" />
@@ -47,10 +47,10 @@ const Footer = () => {
 
 
             </div>
-             <div className="divider mt-14"></div>
-             <div className="mt-8 flex justify-between items-center mb-12">
+            <div className="divider mt-14"></div>
+            <div className="mt-8 flex justify-between items-center mb-12">
                 <div>
-                    <p className="text-[#64748B] "> © 2026 Dev Stack. All rights reserved.</p>
+                    <p className="text-[#64748B] "> &copy; 2026 Dev Stack. All rights reserved.</p>
                 </div>
                 <div className="mr-15">
                     <ul className="flex justify-around items-center gap-6 text-[#64748B] ">
@@ -59,7 +59,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-             </div>
+            </div>
 
         </div>
     );

@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className="flex justify-around items-center  container mx-auto mt-24" >
 
-            <div className="pl-4">
+            <div className="pl-6.5">
                 <p className="text-[60px] font-extrabold leading-none ">Build Your Ideal <br />
                     <span className="text-[60px] font-extrabold  bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Development Stack</span> </p>
                 <p className=" text-[#475569] text-[18px] pt-6  ">

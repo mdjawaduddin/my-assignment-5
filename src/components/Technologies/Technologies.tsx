@@ -15,7 +15,7 @@ const Technologies = ({ techPromise }: TechProps) => {
 
            
 
-            <div className="max-w-7xl mx-auto px-6 mt-28 mb-10">
+            <div className="max-w-7xl mx-auto px-3 mt-28 mb-10">
 
                 <p className="text-[36px] font-extrabold">
                     Explore the{" "}
