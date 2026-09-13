@@ -3,6 +3,7 @@ import type { Itech } from '../../types/Itech';
 import TechCard from '../TechCard';
 import Sidebar from '../Sidebar';
 import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 interface AvailableTechsProps {
     technologies: Itech[];
