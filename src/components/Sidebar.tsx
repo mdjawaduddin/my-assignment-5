@@ -1,5 +1,4 @@
 
-import React from 'react';
 import type { Itech } from '../types/Itech';
 
 interface SidebarProps {

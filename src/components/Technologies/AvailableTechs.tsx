@@ -1,5 +1,4 @@
 
-import React, { useState } from 'react';
 import type { Itech } from '../../types/Itech';
 import TechCard from '../TechCard';
 import Sidebar from '../Sidebar';

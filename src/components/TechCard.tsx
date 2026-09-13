@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Itech } from '../types/Itech';
 import { GoStarFill } from 'react-icons/go';
 import { FaCheck } from 'react-icons/fa';
