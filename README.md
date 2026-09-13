@@ -1,3 +1,26 @@
+Project Name:
+Dev Stack
+
+Description:
+A simple web app where users can explore technologies and build their own development stack.
+
+Technologies Used:
+React.js
+TypeScript
+Tailwind CSS
+DaisyUI
+React-Toastify
+JSON
+Vite
+
+Features:
+Explore different technologies with their details.
+Add technologies to your personal stack.
+Remove technologies or clear the entire stack.
+
+
+Questions
+
 1. What is JSX, and why is it used in React?
 
 JSX is a way to write HTML-style elements in JavaScript. React uses it to create and display the user interface more easily.

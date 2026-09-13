@@ -1,24 +1,41 @@
-
 import React, { use } from 'react';
 import type { Itech } from '../../types/Itech';
 import AvailableTechs from './AvailableTechs';
 
 interface TechProps {
-    techPromise: Promise<Itech[]>
+    techPromise: Promise<Itech[]>;
 }
+
 const Technologies = ({ techPromise }: TechProps) => {
+
     const technologies = use(techPromise);
-    console.log(technologies)
+
     return (
-        <div className="container mx-auto">
-            <div className="mt-28 mb-10  pl-28">
-                <p className="text-[36px] font-extrabold"> Explore the <span className="text-[36px] font-extrabold  bg-linear-to-r from-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text"> Technologies</span> </p>
-                <p className=" text-[18px] text-[#475569]">Pick one technology per category to build your ideal stack.</p>
-            </div>
+        <div className="w-full">
 
            
-                    <AvailableTechs technologies={technologies}></AvailableTechs>
-        
+
+            <div className="max-w-7xl mx-auto px-6 mt-28 mb-10">
+
+                <p className="text-[36px] font-extrabold">
+                    Explore the{" "}
+
+                    <span className="text-[36px] font-extrabold bg-linear-to-r from-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text">
+                        Technologies
+                    </span>
+                </p>
+
+                <p className="text-[18px] text-[#475569]">
+                    Pick one technology per category to build your ideal stack.
+                </p>
+
+            </div>
+
+
+            <AvailableTechs
+                technologies={technologies}
+            />
+
         </div>
     );
 };

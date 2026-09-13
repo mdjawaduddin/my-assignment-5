@@ -1,23 +1,119 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import type { Itech } from '../../types/Itech';
 import TechCard from '../TechCard';
 import Sidebar from '../Sidebar';
+import { toast } from 'react-toastify';
 
-const AvailableTechs = ({ technologies }) => {
+interface AvailableTechsProps {
+    technologies: Itech[];
+}
+
+const AvailableTechs = ({
+    technologies
+}: AvailableTechsProps) => {
+
+    const [stack, setStack] = useState<Itech[]>([]);
+
+
+
+    const handleAddToStack = (tech: Itech) => {
+
+        const isAlreadyAdded = stack.some(
+            (item) => item.id === tech.id
+        );
+
+        if (isAlreadyAdded) {
+            toast.warning("Already added!");
+            return;
+        }
+
+        setStack((previousStack) => [
+            ...previousStack,
+            tech
+        ]);
+
+        toast.success("Technology added!");
+    };
+
+
+
+    const handleRemoveFromStack = (id: string) => {
+
+        setStack((previousStack) =>
+            previousStack.filter(
+                (item) => item.id !== id
+            )
+        );
+
+        toast.info("Technology removed!");
+    };
+
+
+
+    const handleRemoveAll = () => {
+
+        setStack([]);
+
+        toast.error("All technologies removed!");
+    };
+
 
     return (
-        <div className=" grid grid-cols-12 gap-x-0.5 max-w-8xl container mx-auto my-4">
-            <div className="grid grid-cols-3 gap-x-0 col-span-10 gap-2 pl-10  ml-16 mt-2"> {
-                technologies.map((technology: Itech, ind: number) => {
-                    return <TechCard key={ind} technology={technology} />;
-                })} </div>
-            <div className='col-span-2 p-4 mt-6' ><Sidebar/>
+        <div className="w-full">
+
+
+
+            <div className="max-w-7xl mx-auto px-6">
+
+                <div className="grid grid-cols-12 gap-6">
+
+
+
+                    <div className="col-span-12 lg:col-span-9">
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                            {technologies.map((technology) => {
+
+                                const isAdded = stack.some(
+                                    (item) => item.id === technology.id
+                                );
+
+                                return (
+                                    <TechCard
+                                        key={technology.id}
+                                        technology={technology}
+                                        isAdded={isAdded}
+                                        handleAddToStack={handleAddToStack}
+                                    />
+                                );
+
+                            })}
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div className="col-span-12 lg:col-span-3">
+
+                        <Sidebar
+                            stack={stack}
+                            handleRemoveFromStack={handleRemoveFromStack}
+                            handleRemoveAll={handleRemoveAll}
+                        />
+
+                    </div>
+
+                </div>
+
             </div>
 
-
         </div>
-    )
-
+    );
 };
 
 export default AvailableTechs;

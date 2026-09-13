@@ -17,6 +17,7 @@ const techFetch = async() :Promise<Itech[]> => {
 function App() {
 const techPromise = techFetch();
 
+
            
            
   return (
